@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Tenor Sans');
+
+:root {
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+body{
+  background: url("https://www.dentonsmunoz.com/-/media/images/website/background-images/issues-and-opportunities/covid-19/covid-19_background.ashx");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 4rem auto 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-style: italic;
+  text-align: center;
+  }
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1{
+  text-align: center;
+}
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 2rem;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+.form-div {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}

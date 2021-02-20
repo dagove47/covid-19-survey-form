@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">COVID-19 Survey Form</h1>
+            <p id="description" class="description">Please complete the following form</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-div">
+                <label id="name-label" for:"name">Full Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="form-div">
+                <label id="number-label" for:"age">Age</label>
+                <input type="number" name="age" id="number" min="000" max="130" class="form-control"
+                    placeholder="Enter your Age" required>
+            </div>
+
+            <div class="form-div">
+                <label id="idnumber-label" for:"idnumber">ID Number</label>
+                <input type="number" name="idnumber" id="idnumber" class="form-control" placeholder="ID-number"
+                    required>
+            </div>
+
+            <div class="form-div">
+                <label id="phone-label" for:"phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone-number" required>
+            </div>
+
+            <div class="form-div">
+                <label id="email-label" for:"email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com">
+            </div>
+
+            <div class="form-div">
+                <p>Do you have any of the following symptoms?</p>
+                <label>
+                    <input name="symptoms" value="persistent-cough" type="checkbox" class="input-checkbox">New and
+                    persistent cough</label><br>
+                <label>
+                    <input name="symptoms" value="shortness-of-breath" type="checkbox" class="input-checkbox">Shortness
+                    of breath or any difficulty breathing</label><br>
+                <label>
+                    <input name="symptoms" value="fever" type="checkbox" class="input-checkbox">Fever</label><br>
+                <label>
+                    <input name="symptoms" value="no-Symptoms" type="checkbox" class="input-checkbox">No
+                    Symptoms</label>
+            </div>
+
+            <div class="form-div" required>
+                <p>Have you been in contact with anyone in the last 14 days who is experiencing these symptoms?</p>
+                <label>
+                    <input name="time-with-symptoms" value="yes" type="radio" class="input-radio">Yes</label><br>
+                <label>
+                    <input name="time-with-symptoms" value="no" type="radio" class="input-radio">no</label>
+            </div>
+
+            <div class="form-div" required>
+                <p>Have you been in contact with anyone who has since tested positive for Covid-19?</p>
+                <select id="dropdown" class="form-control" name="contact-anyone-Covid-19" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="yes2">Yes</option>
+                    <option value="no2">No</option>
+                    <option value="not-sure">Not sure</option>
+                </select>
+            </div>
+
+            <div class="form-div">
+                <label for:"travelled">Have you travelled abroad in the last 1-2 months? Where did you go?</label>
+                <input type="text" name="travelled" id="travelled" class="form-control" required>
+            </div>
+
+            <div class="form-div">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-div">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
